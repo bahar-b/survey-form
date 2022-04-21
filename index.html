@@ -14,31 +14,148 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div>
-      <h1 id="title">Education Survey Form</h1>
-      <p id="description">
-        Thank you for taking the time to help us improve classroom teaching!
-      </p>
+    <div class="container">
+      <div class="heading">
+        <h1 id="title">Education Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve classroom teaching!
+        </p>
+      </div>
+      <form id="survey-form" action="">
+        <div class="form-group">
+          <label id="name-label">
+            Name
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+          </label>
+        </div>
+        <div class="form-group">
+          <label id="email-label">
+            Email
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+          </label>
+        </div>
+        <div class="form-group">
+          <label id="number-label">
+            Birthday
+            <input
+              id="number"
+              type="date"
+              value="2021-07-22"
+              min="2009-04-01"
+              max="2021-04-20"
+              placeholder="2015-04-15"
+            />
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="">
+            Which was your favorite classroom activity this year?
+            <select name="classroom" id="dropdown" required>
+              <option disabled selected value>Select favorite activity</option>
+              <option value="first">Think, Pair and Share</option>
+              <option value="second">Group Discussion</option>
+              <option value="third">Role Play</option>
+              <option value="forth">Blind Artist</option>
+              <option value="fifth">Ice Breakers</option>
+              <option value="sixth">Mime</option>
+              <option value="seventh">Case Studies</option>
+              <option value="eighth">Creative Writing</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Do you prefer to work alone or in groups?</p>
+          <p>I prefer</p>
+          <label>
+            <input type="radio" name="user" id="" />
+            Alone
+          </label>
+          <label>
+            <input type="radio" name="user" id="" />
+            In pairs
+          </label>
+          <label>
+            <input type="radio" name="user" id="" />
+            In small groups
+          </label>
+          <label>
+            <input type="radio" name="user" id="" />
+            As a whole class
+          </label>
+          <label>
+            <input type="radio" name="user" id="" />
+            On a computer
+          </label>
+        </div>
+        <div class="form-group"></div>
+        <label for="">
+          Which topics bore you?
+          <input type="text" />
+        </label>
+        <label for="">
+          What do you wish we practiced more in class?
+          <input type="text" />
+        </label>
+        <div class="checkbox">
+          <p>what would you like to see improved ?</p>
+          <label for="">
+            <input type="checkbox" name="interest" value="activities" />
+            Think, Pair and Share
+          </label>
+          <label for="">
+            <input type="checkbox" name="interest" value="activities" />
+            Group Discussion
+          </label>
+          <label for="">
+            <input type="checkbox" name="interest" value="activities" />
+            Pictionary
+          </label>
+          <label for="">
+            <input type="checkbox" name="interest" value="activities" />
+            Role Play
+          </label>
+          <label for="">
+            <input type="checkbox" name="interest" value="activities" />
+            Blind Artist
+          </label>
+          <label for="">
+            <input type="checkbox" name="interest" value="activities" />
+            Mime
+          </label>
+          <label for="">
+            <input type="checkbox" name="interest" value="activities" />
+            Ice Breakers
+          </label>
+          <label for="">
+            <input type="checkbox" name="interest" value="activities" />
+            Case Studies
+          </label>
+          <label for="">
+            <input type="checkbox" name="interest" value="activities" />
+            Creative Writing
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="">
+            Any suggestion
+          </label>
+          <textarea name="comment" id="" cols="60" rows="8" placeholder="Comment text.">
+          </textarea>
+        </div class="form-group">
+        <div class="form-group">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
     </div>
-    <form id="survey-form" action="">
-      <div id="name">
-        <label id="name-label">
-          Name
-          <input type="text" placeholder="Enter your name" />
-        </label>
-      </div>
-      <div id="email">
-        <label id="email-label">
-          Email
-          <input type="email" placeholder="Enter your email" />
-        </label>
-      </div>
-      <div id="number">
-        <label id="number-label">
-          Birthday
-          <input type="date" value="2021-07-22" min="2019-04-01" max="2021-04-20" placeholder="2015-04-15" />
-        </label>
-      </div>
-    </form>
   </body>
 </html>
